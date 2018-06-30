@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta http-equiv="Expires" content="Mon, 26 Jul 1997 05:00:00 GMT">
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>Happy Ferma</title>	
+</head>    
+
+<body>			
+	<div class="content">
+			
+		<div class="spinner">
+		  <div class="ball"><span></span></div>
+		  <div class="platebg"></div>
+		  <div class="platetop"></div>
+		  <div id="toppart" class="topnodebox">
+		    <div class="silvernode"></div>
+		    <div class="topnode silverbg"></div>
+		    <span class="top silverbg"></span>
+		    <span class="right silverbg"></span>
+		    <span class="down silverbg"></span>
+		    <span class="left silverbg"></span>
+		  </div>
+		  <div id="rcircle" class="pieContainer">
+		    <div class="pieBackground"></div>
+		  </div>
+		</div>
+		
+		<div class="table">			
+			<img src="img/table.png" alt="">
+			<div class="numbers">
+				<button class="zero" data-id="0"></button>
+				<button class="item-3" data-id="3"></button>
+				<button class="item-6" data-id="6"></button>
+				<button class="item-9" data-id="9"></button>
+				<button class="item-12" data-id="12"></button>
+				<button class="item-15" data-id="15"></button>
+				<button class="item-18" data-id="18"></button>
+				<button class="item-21" data-id="21"></button>
+				<button class="item-24" data-id="24"></button>
+				<button class="item-27" data-id="27"></button>
+				<button class="item-30" data-id="30"></button>
+				<button class="item-33" data-id="33"></button>
+				<button class="item-36" data-id="36"></button>
+				<button class="item-2" data-id="2"></button>
+				<button class="item-5" data-id="5"></button>
+				<button class="item-8" data-id="8"></button>
+				<button class="item-11" data-id="11"></button>
+				<button class="item-14" data-id="14"></button>
+				<button class="item-17" data-id="17"></button>
+				<button class="item-20" data-id="20"></button>
+				<button class="item-23" data-id="23"></button>
+				<button class="item-26" data-id="26"></button>
+				<button class="item-29" data-id="29"></button>
+				<button class="item-32" data-id="32"></button>
+				<button class="item-35" data-id="35"></button>
+				<button class="item-1" data-id="1"></button>
+				<button class="item-4" data-id="4"></button>
+				<button class="item-7" data-id="7"></button>
+				<button class="item-10" data-id="10"></button>
+				<button class="item-13" data-id="13"></button>
+				<button class="item-16" data-id="16"></button>
+				<button class="item-19" data-id="19"></button>
+				<button class="item-22" data-id="22"></button>
+				<button class="item-25" data-id="25"></button>
+				<button class="item-28" data-id="28"></button>
+				<button class="item-31" data-id="31"></button>
+				<button class="item-34" data-id="34"></button>
+			</div>			
+			<div class="btns_12s">
+				<button data-id='1' class="first_12s"></button>
+				<button data-id='2' class="second_12s"></button>
+				<button data-id='3' class="third_12s"></button>
+			</div>
+			<div class="rows">
+				<button data-id='1' class="row_1"></button>
+				<button data-id='2' class="row_2"></button>
+				<button data-id='3' class="row_3"></button>				
+			</div>
+			<div class="red_black">
+				<button class="red"></button>
+				<button class="black"></button>
+			</div>
+			<div class="big_small">
+				<button class="small"></button>
+				<button class="big"></button>
+			</div>
+			<div class="even_odd">
+				<button class="even"></button>
+				<button class="odd"></button>
+			</div>
+		</div>
+
+		<div class="control">
+			<div class="bet">
+				<h1>Make your choose and bet</h1>
+				<!-- Красное/Чёрное	Red/Black	18	1 к одному
+				Чёт/Нечёт	Even/Odd	18	1 к одному
+				Малые/Большие	(1-18)/(19-36)	18	1 к одному
+				Колонны/Дюжины	Columns/Dozens	12	2 к одному	 -->
+				<div class="for_numbers betting">
+					<label for="numbers_bet">Bet for picked numbers</label>
+					<input name="numbers_bet" type="number" class="numbers_bet">
+				</div>
+				<div class="for_dogens betting">
+					<label for="dogens">Bet for picked dozens</label>
+					<input type="number" class="dogens" name="dogens">
+				</div>
+				<div class="for_rows betting">
+					<label for="rows_val">Bet for picked columns</label>
+					<input type="number" class="rows_val" name="rows_val">
+				</div>
+				<div class="for_big_small betting">
+					<label for="big_small_val">Bet for picked big/small</label>
+					<input type="number" class="big_small_val" name="big_small_val">
+				</div>
+				<div class="for_even_odd betting">
+					<label for="even_odd_val">Bet for picked even/odd</label>
+					<input type="number" class="even_odd_val" name="even_odd_val">
+				</div>
+				<div class="for_red_black betting">
+					<label for="red_black_val">Bet for picked red/black</label>
+					<input type="number" class="red_black_val" name="red_black_val">
+				</div>
+				
+				<button class="final_bet">Bet and spin!</button>
+			</div>			
+			<div class="hide">
+				<span class="message">
+					Number Stop: <input id="numwin" type="text" value="24"> Leave blank for random<br><br>
+				</span>
+				<div>
+					<div id="btnSpin" class="button">Spin</div>
+					<div id="btnb" class="button">Bigger</div>
+					<div id="btns" class="button">Smaller</div>
+				</div>			
+			</div>
+		</div>
+	</div>
+
+	<a href="#transaction" class="transaction" style="position: absolute; width: 0.1px; opacity: .1"></a>	
+	<div id="transaction" class="mfp-hide mfp-fade">
+		<p>Transaction is <span class="status_trans"></span></p>		
+		<div class="hash"></div>			
+	</div>
+	
+	<div class="noExtension" style="display: none"> 
+		NOTE: Please install <a target="_blank" href="https://chrome.google.com/webstore/detail/nasextwallet/gehjkhmhclgnkkhpfamakecfgakkfkco">WebExtensionWallet</a>  to use TheMonsters
+	</div>
+	<div class="errNetwork" style="display: none">
+		NOTE: Sorry, you use incorrect net
+	</div>	
+
+	<script src='lib/jquery-3.3.1.min.js'></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/138980/jquery.keyframes.min.js"></script>
+	<link rel="stylesheet" href="lib/main.css">	
+	<link rel="stylesheet" href="lib/magnific-popup.css">    	
+	<script src="lib/vue.min.js"></script>
+	<script src='lib/nebPay.js'></script>    	
+    <script src='lib/nebulas.js'></script>
+    <script src='lib/jquery.magnific-popup.js'></script>
+    <script src="lib/common.js"></script>            
+    <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+</body>
+</html>
