@@ -624,5 +624,31 @@
     border-radius: 5px;
     box-shadow: 1px 1px 3px #990225;    
     display: block;
+    cursor: pointer;
     margin: 10px auto;
+  }
+
+  #transaction {
+    width: 1100px;
+    position: relative;
+    color: #fff;
+    background: #296391;
+    display: block;
+    margin: 0 auto;
+    padding: 30px 100px;
+  }
+  
+  #transaction .mfp-close {
+    color: #fff;
+  }  
+  .status_trans, .hash {
+    display: inline-block;
+  }
+
+  .result {
+    width: 400px;    
+    margin-top: 170px;
+    display: block;
+    color: #fff;
+    text-align: center;
   }

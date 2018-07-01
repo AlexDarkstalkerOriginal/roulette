@@ -80,21 +80,21 @@
 				<button data-id='3' class="third_12s"></button>
 			</div>
 			<div class="rows">
-				<button data-id='1' class="row_1"></button>
+				<button data-id='3' class="row_1"></button>
 				<button data-id='2' class="row_2"></button>
-				<button data-id='3' class="row_3"></button>				
+				<button data-id='1' class="row_3"></button>				
 			</div>
 			<div class="red_black">
-				<button class="red"></button>
-				<button class="black"></button>
+				<button data-id='red' class="red"></button>
+				<button data-id='black' class="black"></button>
 			</div>
 			<div class="big_small">
-				<button class="small"></button>
-				<button class="big"></button>
+				<button data-id="less" class="small"></button>
+				<button data-id="more" class="big"></button>
 			</div>
 			<div class="even_odd">
-				<button class="even"></button>
-				<button class="odd"></button>
+				<button data-id="even" class="even"></button>
+				<button data-id="odd" class="odd"></button>
 			</div>
 		</div>
 
@@ -107,27 +107,27 @@
 				Колонны/Дюжины	Columns/Dozens	12	2 к одному	 -->
 				<div class="for_numbers betting">
 					<label for="numbers_bet">Bet for picked numbers</label>
-					<input name="numbers_bet" type="number" class="numbers_bet">
+					<input name="numbers_bet" type="number" max="0.01" class="numbers_bet" value="0">
 				</div>
 				<div class="for_dogens betting">
 					<label for="dogens">Bet for picked dozens</label>
-					<input type="number" class="dogens" name="dogens">
+					<input type="number" class="dogens dozens_bet" max="0.01" name="dogens" value="0">
 				</div>
 				<div class="for_rows betting">
 					<label for="rows_val">Bet for picked columns</label>
-					<input type="number" class="rows_val" name="rows_val">
+					<input type="number" class="rows_val" name="rows_val" max="0.01" value="0">
 				</div>
 				<div class="for_big_small betting">
 					<label for="big_small_val">Bet for picked big/small</label>
-					<input type="number" class="big_small_val" name="big_small_val">
+					<input type="number" class="big_small_val" max="0.01" name="big_small_val" value="0">
 				</div>
 				<div class="for_even_odd betting">
 					<label for="even_odd_val">Bet for picked even/odd</label>
-					<input type="number" class="even_odd_val" name="even_odd_val">
+					<input type="number" class="even_odd_val" max="0.01" name="even_odd_val" value="0">
 				</div>
 				<div class="for_red_black betting">
 					<label for="red_black_val">Bet for picked red/black</label>
-					<input type="number" class="red_black_val" name="red_black_val">
+					<input type="number" class="red_black_val" max="0.01" name="red_black_val" value="0">
 				</div>
 				
 				<button class="final_bet">Bet and spin!</button>
@@ -143,6 +143,8 @@
 				</div>			
 			</div>
 		</div>
+
+		<div class="result"></div>
 	</div>
 
 	<a href="#transaction" class="transaction" style="position: absolute; width: 0.1px; opacity: .1"></a>	
